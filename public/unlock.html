@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Link protegido · encurtador</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/unlock.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <canvas id="unlock-header-orb" data-thinking-orb data-orb-state="working" data-orb-size="28" data-orb-theme="dark" aria-label="Encurtador"></canvas>
+      <span>encurtador</span>
+    </a>
+  </header>
+
+  <main class="page">
+    <section class="auth card" id="unlock-card">
+      <canvas id="unlock-orb" data-thinking-orb data-orb-state="listening" data-orb-size="72" data-orb-theme="dark" aria-label="Aguardando senha"></canvas>
+      <h1>Link protegido</h1>
+      <p class="muted">Digite a senha do dono do link para continuar.</p>
+      <form id="unlock-form" class="stack">
+        <label>Senha
+          <input name="password" type="password" required autocomplete="off" autofocus>
+        </label>
+        <p class="error" id="unlock-error" role="alert"></p>
+        <button class="btn primary" type="submit">Continuar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

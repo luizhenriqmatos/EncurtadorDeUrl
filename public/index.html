@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encurtador de URL · QR Code e métricas</title>
+  <meta name="description" content="Encurte URLs, gere QR Code e acompanhe cliques, origens, dispositivos e expiração.">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <canvas id="header-orb" data-thinking-orb data-orb-state="working" data-orb-size="28" data-orb-theme="dark" aria-label="Estado do sistema"></canvas>
+      <span>encurtador</span>
+    </a>
+    <nav id="nav" class="nav"></nav>
+  </header>
+
+  <main id="app" class="page"></main>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <footer class="footer">
+    Thinking Orbs © 2026 Jakub Antalik · licença MIT ·
+    <a href="https://github.com/Jakubantalik/thinking-orbs">github</a>
+  </footer>
+</body>
+</html>
